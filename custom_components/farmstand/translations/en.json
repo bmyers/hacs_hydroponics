@@ -1,0 +1,27 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Farmstand Nook Setup",
+        "description": "Configure your smart plug entities for pump and grow lights.",
+        "data": {
+          "pump_switch": "Pump Outlet Entity (e.g., switch.farmstand_pump)",
+          "lights_switch": "Lights Outlet Entity (e.g., switch.farmstand_lights)",
+          "season_weeks": "Default Season Length (Weeks)",
+          "cleaning_minutes": "Default Maintenance Pump Timer (Minutes)"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Farmstand Settings",
+        "data": {
+          "season_weeks": "Season Duration (Weeks)",
+          "cleaning_minutes": "Maintenance Flush Duration (Minutes)"
+        }
+      }
+    }
+  }
+}
