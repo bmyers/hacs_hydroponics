@@ -60,7 +60,8 @@ class FarmstandConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             }
         )
 
-        return self.show_form(
+        # Fixed: Changed show_form to async_show_form
+        return self.async_show_form(
             step_id="user",
             data_schema=data_schema,
         )
@@ -110,4 +111,5 @@ class FarmstandOptionsFlowHandler(config_entries.OptionsFlow):
             }
         )
 
-        return self.show_form(step_id="init", data_schema=options_schema)
+        # Fixed: Changed show_form to async_show_form
+        return self.async_show_form(step_id="init", data_schema=options_schema)
